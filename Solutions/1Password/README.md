@@ -1,4 +1,6 @@
-![image](https://gist.github.com/assets/40334679/6c2b8729-a185-4396-88ce-5a1f6612f4cb)
+[![Mr Robot fonts](https://see.fontimg.com/api/renderfont4/g123/eyJyIjoiZnMiLCJoIjoxNzEsInciOjI2MjUsImZzIjo2NSwiZmdjIjoiIzZGMTExMSIsImJnYyI6IiMwODAwMDAiLCJ0IjoxfQ/UiBvIGcgaSBlIHIgIEQgaSBqIGsgbSBhIG4/mrrobot.png)](https://www.fontspace.com/category/mr-robot)
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=comfortaa&color=016EEA&size=24&width=500&lines=Security+Researcher;Cloud+Security+Architect;Open-Source+Maintainer;Blogger)](https://git.io/typing-svg)
 
 # 1Password - Microsoft Sentinel solution
 
