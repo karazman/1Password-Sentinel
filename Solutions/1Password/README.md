@@ -20,19 +20,19 @@ For the deployment, a custom UI has been created to guide users through the setu
 
 Once the Resource Group is selected, the workspace field will automatically populate with the available workspaces.
 
-![image](https://gist.github.com/assets/40334679/bb608088-a238-4118-95f6-5cc38510f291)
+![image](https://github.com/azurekid/1Password-Sentinel/assets/40334679/52746794-7c43-4781-b4e7-d2148852a7eb)
  
 In the next screen of the installation wizard, details about the 1Password connection are requested, such as the 1Password API Key and the region.  
 
-![image](https://gist.github.com/assets/40334679/18530949-d1e1-417e-8fd2-df9c6c849247)
+![image](https://github.com/azurekid/1Password-Sentinel/assets/40334679/5eed9949-4c4d-4178-a959-c2295b1f0f17)
 
 After the setup is completed, a summary will be displayed showing the results of the deployed templates.
 
-![image](https://gist.github.com/assets/40334679/9c86ce99-25df-4039-9397-eddf67acd7f2)
+![image](https://github.com/azurekid/1Password-Sentinel/assets/40334679/e4e43d45-f37a-40b4-95e0-32f99d1bc234)
 
 After some time, Microsoft Sentinel will start receiving data from the 1Password API, and the data connector will show as connected.
 
-![image](https://gist.github.com/assets/40334679/4e3e56da-3ad8-4bc8-953c-e6a988cf9034)
+![image](https://github.com/azurekid/1Password-Sentinel/assets/40334679/ca6d5e08-5bb9-43e3-bb6f-110222474b53)
 
 ## Included resources
 
@@ -52,21 +52,21 @@ This workbook is divided into two sections: one for general information and anot
 The initial section of the 1Password workbook provides an overview of organizational usage.  
 Within this section, graphical representations offer insights into frequently accessed locations, user activity, and 1Password version information.
 
-![image](https://gist.github.com/assets/40334679/e03690de-48f9-409e-96d3-f86eb7735a1e)
-![image](https://gist.github.com/assets/40334679/91e44253-fa9e-4da6-8380-346ea168d4b1)
+![image](https://github.com/azurekid/1Password-Sentinel/assets/40334679/949d362b-70d8-4236-9544-2aea15a015f8)
+![image](https://github.com/azurekid/1Password-Sentinel/assets/40334679/8ee38e88-e6a8-4367-b273-7052707e1f9a)
 
 **User Data**  
 This section presents insights into individual user activity within 1Password.  
 It includea metrics such as the signin patterns application versions, authentication attempts, ip addresses, etc.
 
-![image](https://gist.github.com/assets/40334679/94d8369e-99eb-4979-97b3-a1abb50bc3aa)
-![image](https://gist.github.com/assets/40334679/7be6e329-76db-47b0-a32f-f7f2b1b88f3c)
+![image](https://github.com/azurekid/1Password-Sentinel/assets/40334679/ba502fac-7f3e-4eed-b9bb-b116aa0d5ee7)
+![image](https://github.com/azurekid/1Password-Sentinel/assets/40334679/ed6550ca-4fc6-4daa-b564-77c3c3494967)
 
 ## Analytics Rules
 
 The solution contains 18 Microsoft Sentinel analytics rules designed to detect and respond to potential security threats or suspicious activities within the organization's 1Password environment, enhancing the overall security posture and resilience against cyber threats.
 
-![image](https://gist.github.com/assets/40334679/c643ae12-0a7b-4345-88b7-f722bde17db4)
+![image](https://github.com/azurekid/1Password-Sentinel/assets/40334679/4aa767a2-f07f-432a-8835-c41e5867a6cb)
 
 ## Architecture
 
@@ -79,7 +79,7 @@ If we breakdown the 1Password solution for Microsoft Sentinel we can identity th
 - Date Collection Endpoint
 - Custom Table for 1Password events
 
-![image](https://gist.github.com/assets/40334679/99181c59-2139-4564-b9d3-97429186b77d)
+![image](https://github.com/azurekid/1Password-Sentinel/assets/40334679/039ca4c9-3a40-472b-a32e-875b32a97160)
 
 ## Solution description
 
@@ -122,8 +122,7 @@ During the deployment of the 1Password Solution for Microsoft Sentinel, role ass
 
 The next image illustrates the data flow for the integration between 1Password and Microsoft Sentinel.  
 
-![image](https://gist.github.com/assets/40334679/9af19410-2646-4812-9675-65214cf8ae48)
-
+![image](https://github.com/azurekid/1Password-Sentinel/assets/40334679/8740e1b7-8017-4226-a7a0-50d47b31c1ef)
 
 ## Code Security
 
@@ -138,17 +137,17 @@ The code utilizes a custom PowerShell Module in the background to streamline the
   
 - **Only healthevents are shown**  
   By default, 1Password does not provide any health information through its APIs. The 1Password Solution for Sentinel runs every 5 minutes to check for new information. If no new information is available, only a timestamp will be written to the workspace.
-  ![image](https://gist.github.com/assets/40334679/16f08275-97f2-45ee-9b05-37054411f992)
-  
+  ![image](https://github.com/azurekid/1Password-Sentinel/assets/40334679/2339c3f8-3795-4088-8b8a-a50502757da0)
+
 - **API Key Invalid**  
   After retrieving the API key from Azure Key Vault, a connection is established with the 1Password API to validate the key's validity.  To update the 1Password API key, you can either redeploy the 1Password solution for Microsoft Sentinel (recommended method) with the correct key or manually add a new API key in the designated field within the Azure Key Vault.
   
-  ![image](https://gist.github.com/assets/40334679/06cff45c-abab-4656-a572-efb3c665a7bc)
+![image](https://github.com/azurekid/1Password-Sentinel/assets/40334679/261c274a-4232-4649-b721-d4314a0cfcb5)
 
 - **API Key Invalid**  
 If an invalid endpoint is provided during the solution setup, an API Key Invalid message may appear in the logs. This occurs when the claims in the OAuth token do not include the correct audience. To verify this, you can paste the OAuth token into jwt.ms. The API Endpoint can be manually updated in the Environment Variables section of the Function App.
 
-![image](https://gist.github.com/assets/40334679/983ede99-0c0f-44e7-b21b-b023d072bd75)
+![image](https://github.com/azurekid/1Password-Sentinel/assets/40334679/b3390dc3-7157-4f39-9662-6ec70b2249ea)
 
 - **The log_source column is not found in the 1Password API documentation**  
   That is correct! the column `log_source` is created by the solution and shows from what API endpoint the data is received.
