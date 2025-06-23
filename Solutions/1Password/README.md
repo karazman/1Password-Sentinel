@@ -12,7 +12,8 @@ By ingesting audit logs, sign-in events, and usage information into Microsoft Se
 
 The 1Password-Microsoft Sentinel solution includes a data connector, Azure workbook for visualizing password manager usage and features 18 unique analytics rules designed to identify and detect malicious behavior. 
 
-[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fazurekid%2F1Password-Sentinel%2Fmain%2FSolutions%2F1Password%2FData%2520Connectors%2F1Password%2Fazuredeploy_1Password_API_FunctionApp.json/createUIDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2Fazurekid%2F1Password-Sentinel%2Fmain%2FSolutions%2F1Password%2FData%2520Connectors%2F1Password%2Fdeployment%2FUiDefinition.json)
+[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2F**karazman**%2F1Password-Sentinel%2Fmain%2FSolutions%2F1Password%2FData%2520Connectors%2F1Password%2Fazuredeploy_1Password_API_FunctionApp.json/createUIDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2F**karazman**%2F1Password-Sentinel%2Fmain%2FSolutions%2F1Password%2FData%2520Connectors%2F1Password%2Fdeployment%2FUiDefinition.json
+)
 
 ## Deploying the solution
 
